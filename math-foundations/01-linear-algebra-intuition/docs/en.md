@@ -224,7 +224,7 @@ print(f"|a| = {a.magnitude():.4f}")
 print(f"cosine similarity = {a.cosine_similarity(b):.4f}")
 ```
 
-[gambar 1](../asset/vector_from_scratch.png)
+![gambar 1](../asset/vector_from_scratch.png)
 
 ### Step 2: Matrices from scratch (Python)
 
@@ -269,7 +269,7 @@ print(f"Original: {point}")
 print(f"Rotated 90°: {rotated}")
 ```
 
-[gambar 2](../asset/matriks_from_scratch.png)
+![gambar 2](../asset/matriks_from_scratch.png)
 
 ### Step 3: Why this matters for AI
 
@@ -286,7 +286,7 @@ print(f"Output (2D): {output}")
 print("This is what a neural network layer does -- matrix multiplication.")
 ```
 
-[gambar 3](../asset/why_this_matters.png)
+![gambar 3](../asset/why_this_matters.png)
 
 ### Step 4: Julia version
 
@@ -306,7 +306,7 @@ println("Wx = ", W * x)
 println("This is a neural network layer.")
 ```
 
-[gambar 4](../asset/julia_version.png)
+![gambar 4](../asset/julia_version.png)
 
 ### Step 5: Linear independence and projection from scratch (Python)
 
@@ -367,7 +367,7 @@ print(f"u1 · u3 = {basis[0].dot(basis[2]):.6f}")
 print(f"u2 · u3 = {basis[1].dot(basis[2]):.6f}")
 ```
 
-[gambar 5](../asset/Linear_independence_and_projection.png)
+![gambar 5](../asset/Linear_independence_and_projection.png)
 
 ## Use It
 
@@ -389,7 +389,7 @@ x = np.array([1.0, 0.5, -0.3])
 print(f"Wx = {W @ x}")
 ```
 
-[gambar ke 6](../asset/implementation.png)
+![gambar ke 6](../asset/implementation.png)
 
 ### Rank, Projection, and QR with NumPy
 
@@ -409,7 +409,7 @@ print(f"Q is orthogonal: {np.allclose(Q @ Q.T, np.eye(3))}")
 print(f"R is upper triangular: {np.allclose(R, np.triu(R))}")
 ```
 
-[gambar ke 7](../asset/rank_projection_qr_with_numpy.png)
+![gambar ke 7](../asset/rank_projection_qr_with_numpy.png)
 
 ### PyTorch -- Tensors Are Vectors with Autodiff
 
@@ -428,7 +428,7 @@ print(f"dot product = {similarity.item():.4f}")
 print(f"d(dot)/dx = {x.grad}")
 ```
 
-[gambar ke 8](../asset/tensors_are_vectors_with%20_autodiff.png)
+![gambar ke 8](../asset/tensors_are_vectors_with%20_autodiff.png)
 
 The gradient of the dot product with respect to x is just y. PyTorch computed this automatically. Every operation in a neural network is built from operations like this -- matrix multiplies, dot products, projections -- and autodiff tracks gradients through all of them.
 
